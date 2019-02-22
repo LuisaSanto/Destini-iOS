@@ -9,9 +9,9 @@
 import Foundation
 
 class Story {
-    private let text: String
-    private let answer1: String
-    private let answer2: String
+    let text: String
+    let answer1: String
+    let answer2: String
     
     init(text: String, answer1: String, answer2: String) {
         self.text = text
