@@ -43,7 +43,7 @@ class StoryBank {
     func addStories() {
         assert(stories.count == answer1.count && answer1.count == answer2.count, "Story.array, answer1.array and answer2.array do not match in length")
         for i in 0 ..< stories.count {
-            let newStory = Story(text: self.stories[i], answer1: self.answer1[i], answer2: self.answer2[i])
+            let newStory = Story(text: self.stories[i], answer1: self.answer1[i], answer2: self.answer2[i], index: i )
             allStory.append(newStory)
         }
     }

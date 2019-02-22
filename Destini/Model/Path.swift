@@ -21,5 +21,13 @@ class Path {
         children.append(child)
         child.parent = self
     }
+    
+    func printNodeData() -> [String] {
+        return ["\(self.value.index+1)"] + self.children.flatMap{$0.printNodeData()}.map{"    "+$0}
+    }
+    func printTree() {
+        let text = printNodeData().joined(separator: "\n")
+        print(text)
+    }
 
 }
