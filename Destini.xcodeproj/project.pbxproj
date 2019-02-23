@@ -10,8 +10,6 @@
 		3E817F9022201972001DB848 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E817F8F22201972001DB848 /* Story.swift */; };
 		3E817F9222201980001DB848 /* StoryBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E817F9122201980001DB848 /* StoryBank.swift */; };
 		3E817F9422202256001DB848 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E817F9322202256001DB848 /* AppDelegate.swift */; };
-		3E817F99222022DA001DB848 /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E817F96222022D9001DB848 /* ProgressHUD.m */; };
-		3E817F9A222022DA001DB848 /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3E817F98222022DA001DB848 /* ProgressHUD.bundle */; };
 		3E817F9C22202863001DB848 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E817F9B22202863001DB848 /* Path.swift */; };
 		3E817F9E22202C55001DB848 /* PathLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E817F9D22202C55001DB848 /* PathLine.swift */; };
 		AD6F1CCE20EBD3FC00198C34 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AD6F1CCD20EBD3FC00198C34 /* README.md */; };
@@ -25,10 +23,6 @@
 		3E817F8F22201972001DB848 /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
 		3E817F9122201980001DB848 /* StoryBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBank.swift; sourceTree = "<group>"; };
 		3E817F9322202256001DB848 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3E817F95222022D9001DB848 /* Destini-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Destini-Bridging-Header.h"; sourceTree = "<group>"; };
-		3E817F96222022D9001DB848 /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
-		3E817F97222022DA001DB848 /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
-		3E817F98222022DA001DB848 /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
 		3E817F9B22202863001DB848 /* Path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
 		3E817F9D22202C55001DB848 /* PathLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathLine.swift; sourceTree = "<group>"; };
 		AD6F1CCD20EBD3FC00198C34 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -113,10 +107,6 @@
 			children = (
 				EBB1C7491B9633A60011F5C3 /* LaunchScreen.xib */,
 				EBB1C73F1B9633A60011F5C3 /* Info.plist */,
-				3E817F98222022DA001DB848 /* ProgressHUD.bundle */,
-				3E817F97222022DA001DB848 /* ProgressHUD.h */,
-				3E817F96222022D9001DB848 /* ProgressHUD.m */,
-				3E817F95222022D9001DB848 /* Destini-Bridging-Header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -183,7 +173,6 @@
 				EBB1C7461B9633A60011F5C3 /* Main.storyboard in Resources */,
 				EBB1C74B1B9633A60011F5C3 /* LaunchScreen.xib in Resources */,
 				AD6F1CCE20EBD3FC00198C34 /* README.md in Resources */,
-				3E817F9A222022DA001DB848 /* ProgressHUD.bundle in Resources */,
 				EBB1C7481B9633A60011F5C3 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -198,7 +187,6 @@
 				3E817F9422202256001DB848 /* AppDelegate.swift in Sources */,
 				EBB1C7431B9633A60011F5C3 /* ViewController.swift in Sources */,
 				3E817F9E22202C55001DB848 /* PathLine.swift in Sources */,
-				3E817F99222022DA001DB848 /* ProgressHUD.m in Sources */,
 				3E817F9022201972001DB848 /* Story.swift in Sources */,
 				3E817F9C22202863001DB848 /* Path.swift in Sources */,
 				3E817F9222201980001DB848 /* StoryBank.swift in Sources */,
