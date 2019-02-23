@@ -22,19 +22,20 @@ class ViewController: UIViewController {
         initialization()
     }
 
-    
     // User presses one of the buttons
     @IBAction func buttonPressed(_ sender: UIButton) {
         if sender.tag == topButton.tag {
-            if ((path.root?.children[0].value.answer1) != "" || path.root?.children[0] != nil) {
+            if ((path.root?.children[0].value.answer1) != "" || path.root?.children[0].children.isEmpty == false) {
                 updateUI(position: 0)
             } else {
+                print("im here 1")
                 removeButton()
             }
         } else {
-            if ((path.root?.children[1].value.answer1) != "" || path.root?.children[0] != nil) {
+            if ((path.root?.children[1].value.answer1) != "" || path.root?.children[1].children.isEmpty == false) {
                 updateUI(position: 1)
             } else {
+                print("im here 2")
                 removeButton()
             }
         }
@@ -50,14 +51,19 @@ class ViewController: UIViewController {
         storyTextView.text = path.root?.children[position].value.text
         topButton.setTitle(path.root?.children[position].value.answer1, for: UIControl.State.normal)
         bottomButton.setTitle(path.root?.children[position].value.answer2, for: UIControl.State.normal)
-        path.setRoot(root: (path.root?.children[position])!)
+        let newRoot = path.root?.children[position]
+        if newRoot != nil {
+            path.setRoot(root: (path.root?.children[position])!)
+            //print((path.root?.children[position].value.index))
+        } else {
+            path.setRoot(root: ((path.root?.parent)!))
+        }
     }
     
     func removeButton() {
-        topButton.setTitle("Unavailable", for: UIControl.State.normal)
-        bottomButton.setTitle("Unavailable", for: UIControl.State.normal)
+        topButton.isHidden = true
+        bottomButton.isHidden = true
     }
-    
     
 }
 
